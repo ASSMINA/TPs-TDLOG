@@ -4,6 +4,11 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from model.game import Game
 from services.game_service import GameService
+#from starlette.staticfiles import StaticFiles
+#app = FastAPI()
+#BASE_PATH = Path(__file__).resolve().parent.parent
+#app.mount("/views", StaticFiles(directory=BASE_PATH / 'views'), name="views")
+
 
 app = FastAPI()
 game_service = GameService()
